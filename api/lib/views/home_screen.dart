@@ -9,6 +9,7 @@ import 'package:api/views/example_three.dart';
 import 'package:api/views/example_two.dart';
 import 'package:api/views/login_screen.dart';
 import 'package:api/views/signup.dart';
+import 'package:api/views/upload_image_screen.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -70,6 +71,11 @@ class HomeScreen extends StatelessWidget {
               onPressed: () =>
                   navigator(context: context, screen: SigninScreen()),
               child: Text("Sign in Screen"),
+            ),
+            TextButton(
+              onPressed: () =>
+                  navigator(context: context, screen: UploadImageScreen()),
+              child: Text("Upload image Screen"),
             ),
           ],
         ),
